@@ -1,0 +1,89 @@
+@charset "utf-8";
+/*초기화*/
+html, body, div, header, nav, section, aside,  article, footer, figure, 
+figcaption, fieldset, legend, ul, ol, li, dl, dt, dd, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+} /*예전에는 *로 전체다 적용하게 했지만 이제부터는 사용한 태그만 이렇게 써서 초기화를 하는게 좋다.*/
+ul {
+    list-style: none; /*불립 기호를 사라지게 함. */
+}
+fieldset {
+    border: 0;
+}
+#container {
+    position: relative;
+    width: 100%;
+}
+/*숨김 콘텐츠 정의 - 웹브라우저 화면 밖으로 이동시키는 식으로 만듦*/
+.hidden, legend, caption {
+    position: absolute;
+    left: -9999px; /*.hidden 은 클래스 이름이 hidden 인걸 말함*/
+}
+/*전체 기본 스타일*/
+/*웹 폰트*/
+@font-face {
+    font-family: "Nanum";
+    font-weight: 400; 
+    src: url("font/NanumGothic.eot?#iefix")format("embedded-opentype"),
+         url("font/NanumGothic.woff")format("woff"),
+         url("font/NanumGothic.ttf")format("truetype"); 
+}
+@font-face {
+    font-family: "NanumBold";
+    font-weight: 600; 
+    src: url("font/NanumGothicBold.eot?#iefix")format("embedded-opentype"),
+         url("font/NanumGothicBold.woff")format("woff"),
+         url("font/NanumGothicBold.ttf")format("truetype"); 
+}
+@font-face {
+    font-family: "NanumEx";
+    font-weight: 900; 
+    src: url("font/NanumGothicExtraBold.eot")format("embedded-opentype"),
+         url("font/NanumGothicExtraBold.woff")format("woff"),
+         url("font/NanumGothicExtraBold.ttf")format("truetype"); 
+}
+@font-face { /*아이콘글꼴*/
+    font-family: "webcafeIcon";
+    font-weight: 400;
+    src: url("font/webcafeIcon.eot?#iefix")format("embedded-opentype"),
+         url("font/webcafeIcon.woff")format("woff"),
+         url("font/webcafeIcon.ttf")format("truetype"),
+         url("font/webcafeIcon.svg#webcaferegular")format("svg");
+}
+/*링크 스타일*/
+a:link {
+    color: #4f4f4f;
+    text-decoration: none;
+}
+a:visited {
+    color: #8a8e91;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #111;
+    text-decoration: none;
+}
+/*기본 스타일*/
+body {
+    color: #000;
+    background-color: #fff;
+    font-size: 0.75em; /*16px을 1em으로 한다. 0.75em=> 16*0.75=12px*/
+    line-height: 1.2; /*줄간격*/
+    font-family: "Nanum";
+    font: 13pt;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+h1, h2, h3, h4{
+    font-size: 100%;
+}
+
+address{
+    font-style: normal;
+    font-weight: normal;
+}

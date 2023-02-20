@@ -1,0 +1,604 @@
+@charset "utf-8";
+/*퀵메뉴*/
+#quick{
+    position: fixed;
+    width: 100px;
+    height: 450px;
+    margin-top: 200px;
+    left: 50%;
+    margin-left: 620px;
+    z-index: 1000;
+    background-color: rgb(255, 217, 102);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#quick_menu{
+    position: relative;
+    width: 80px;
+    height: 428px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#quick_menu li{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-bottom: 7px dotted rgb(255, 217, 102);
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+#quick_menu li:last-child{
+    border: none;
+}
+
+#quick_menu li p{
+    font: bold 0.9em "NGothic", Gulim;
+    color: #777;
+}
+
+#quick_menu .quick2_first{
+    background-color: rgb(255, 217, 102);
+}
+
+#quick_menu .quick2_first p{
+    color: #fff;
+    font: bold 1.1em "NGothicEB", Gulim;
+}
+
+/*hover*/
+
+#quick_menu li:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#quick_menu li:hover:first-child{
+    background-color: rgb(255, 217, 102);
+}
+
+#quick_menu li:hover:last-child{
+    border-radius: 15px;
+}
+
+#quick_menu li:hover p{
+    color: rgb(9, 46, 46);
+    font-family: "NGothicEB", Gulim;
+    font-weight: bold;
+}
+
+/*head영역*/
+#head{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+    z-index: 100;
+}
+
+#head:hover{
+    background-color: #f2f799;
+}
+
+header{
+    position: relative;
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header a{
+    color: #ddd;
+}
+
+header h1{
+    position: relative;
+    
+}
+
+header h1 img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 500px;
+    margin: 30px 0 30px -10px;
+}
+header form {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+header .infoLink {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    overflow: hidden;
+}
+header .infoLink>li {
+    float: left;
+    margin: 8px 0 7px 5px;
+}
+header .infoLink>li::before{
+    content: "|";
+    padding-right: 7px;
+}
+header .infoLink li:last-child a::after{
+    content : "|"; 
+    padding-left : 7px;
+}
+nav #mainMenu {
+    position: relative;
+    width: 1080px;
+    height: 60px;
+    /*border: 2px solid red;*/
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em; 
+}
+
+nav #mainMenu>li {
+    float: left;
+    width: 170px;
+    padding: 10px 22px;
+}
+
+.sub {
+    position: absolute;
+    width: 1080px;
+    display: block;
+}
+.sub li {
+    display: block;
+    float: left;
+    font-size: 17px;
+    margin-top: 20px;
+    width: 180px;
+    /*border: 1px solid red;*/
+    border-right: 2px solid #aaa;
+}
+.sub li:last-child{
+    border-right: none;
+}
+
+/*.sub_article {
+    /*display: block;
+}*/
+#mainMenu li:nth-child(4) ul {
+    position: relative;
+    left: -190px;
+}
+
+
+#mainMenu li:last-child ul{
+    position: relative;
+    left: -552px;
+}
+/*header영역 끝*/
+
+/*ad영역*/
+#ad {
+    position: relative;
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+#adArea {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    height: 700px;
+    /*border: 1px solid red;*/
+}
+#adArea > video {
+    position: absolute;
+    width: 100%;
+}
+#adArea > p.strong{
+    position: absolute;
+    left: 500px;
+    top: 380px;
+    z-index : 5000;
+    font-size: 3em;
+    color: #cccccc;
+    font-weight: bold;
+    /*border: 2px solid blue;*/
+}
+
+/*styleArea*/
+#styleArea {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+
+}
+#style {
+    position: relative;
+    width: 1080px;
+    height: 550px;
+    margin: 0 auto;
+    /*border: 1px solid blue;*/
+}
+#style h2 {
+    /*border: 1px solid blue;*/
+    position: relative;
+    padding-top: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size:  3em;
+    height: 50px;
+}
+#style #styleBox {
+    position: relative;
+    width: 1080px;
+    height: 550px;
+    top: 60px;
+    overflow: hidden;
+    /*border: 1px solid green;*/
+}
+#styleBox .styleBoxContent {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px 0 10px 42px;
+    /*border: 1px solid red;*/
+
+}
+.lookbookimg {
+    width: 300px;
+    opacity: 0.7;
+}
+.lookbookimg:hover{
+    opacity: 1.0;
+    transition: ease 1s;
+}
+#styleBox > a{
+    position: relative;
+    display: inline-block ;
+    text-align: center;
+    border: 1px solid;
+    left: 340px;
+    /*padding-top: -30px;*/
+    bottom: 15px;
+}
+
+#style .more_button {
+    position: relative;
+    margin: 0 auto;
+    /*border-radius: 20px;*/
+    background-color: #fff; 
+    width: 180px;
+    height: 65px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.more_button a.more {
+    position: relative;
+    display: inline-block;
+    /*border: 2px solid red;*/ 
+    font-size: 1.3em;
+    line-height: 65px;
+    width: 200px;
+    /*left: 110px;*/
+    font-family: "NanumBold";
+}
+
+#style .more_button a.more:hover {
+    color: #fff;
+    background-color: #283048;
+    transition: ease 1s;
+}
+    
+
+/*bodytypeArea 시작*/
+#bodytypeArea {
+    width: 100%;
+    height: 80px;
+    /*border: 1px solid red;*/
+    background-image: linear-gradient(to right, #283048 0%, #859398 30% ,#2c5364 100%);
+    position: relative;
+    margin-top: 40px; /*이거 사이 간격을 늘리고 싶은데..*/ 
+}
+#bodytypeArea h2 {
+    position: absolute;
+    /*border: 2px solid blue;*/
+    left: 580px;
+    top: 25px;
+    font-family: "NanumBold";
+    font-size: 2em;
+}
+#bodytypeArea h2 a {
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+#bodytypeArea h2 a:hover{
+    color: #ddd;
+}
+
+/*springRecommand*/
+#springRecommand {
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to right, #EF3B36 0%, #ffffff 100%);
+    position: relative;
+}
+#springRecommand h2 {
+    position: absolute;
+    /*border: 2px solid blue;*/
+    left: 620px;
+    top: 25px;
+    font-size: 2em;
+    font-family: "NanumBold";
+}
+#springRecommand h2 a {
+    color: #3494E6;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+}
+#springRecommand h2 a:hover {
+    color: #004e92; 
+}
+
+/*trendArea*/
+#trendArea {
+    width: 100%;
+    position: relative;
+    height: 1000px;
+    background-color: #111;
+    /*border: 1px solid red;*/
+}
+#trend {
+    width: 1200px;
+    position: inherit;
+    height: 1200px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+#trend h2 {
+    position: relative;
+    margin: 0 auto;
+    height: 80px;
+    text-align: center;
+    padding-top: 80px;
+    font-weight: bold;
+    font-size:  3em;   
+    color: #fff;
+}
+#trend p {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    z-index : 5000;
+    font-size: 2em;
+    color: #aaa;
+    font-weight: bold;
+}
+#trendBox {
+    position: relative;
+    width: 1200px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+#trendBox .trendWrapper{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 50px 0 10px 20px;
+}
+.trendWrapper img {
+    width: 370px;
+    height: 475px;
+    opacity: 0.2;
+}
+.trendWrapper img:hover{
+    opacity: 1.0;
+    transition: ease 1s;
+}
+.trendWrapper h4 {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+#trend .more_button {
+    position: relative;
+    /*border: 1px solid red;*/
+    width: 200px;
+    font-size: 0.8em;
+    background-color: #111;
+    padding-bottom: 5px ;
+    margin: 55px auto 0 auto;
+}
+#trend .more_button:hover {
+    background-color: #283048;
+    transition: ease 1s;
+}
+#trend .more_button a {
+    padding-left: 10px;
+    color: #fff;
+}
+#trend .more_button a:hover {
+    color :#fff;
+}
+
+
+/*articleArea 영역 시작*/
+#articleArea {
+    width: 100%;
+    position: relative;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+#article {
+    width: 1080px;
+    position: relative;
+    margin: 0 auto;
+    /*border: 2px solid red;*/
+}
+#article h2 {
+    position: relative;
+    top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size:  3em;
+    height: 50px;
+}
+#articleBox {
+    position: relative;
+    width: 1080px;
+    height: 550px;
+    padding-top: 40px;
+    overflow: hidden;
+}
+.articleWrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    height: 350px;
+    margin-top: 50px;
+    /*border: 1px solid red;*/
+}
+#articleBox .articleWrapper img {
+    width: 350px;
+    height: 233px;
+    margin: 20px 3px 0px 3px;
+
+}
+#articleBox .articleWrapper h3{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.articleWrapper .more{
+    display: inline-block;
+    position: relative;
+    padding: 20px 20px ;
+    left: 130px;
+}
+.articleWrapper .more:hover{
+    color: #111;
+}
+/*footer*/
+footer {
+    /*border: 2px solid red;*/
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(to bottom, #eef2f3 0%, #8e9eab 100%);
+}
+
+.footerArea {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+footer .footerArea .footer_nav {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+    margin-top: 70px;
+    overflow: hidden;
+}
+footer .footerArea .footer_nav li {
+    float: left;
+}
+
+footer .footerArea .footer_nav li a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #111;
+    font-size: 1.1em;
+    line-height: 50px;
+    padding: 0 44px;
+}
+footer .footerArea .footer_nav li a:hover {
+    color: #3494E6;
+    font-weight: bold;
+}
+#address {
+    /*border: 1px solid red;*/
+    position: relative;
+    width: 70%;
+    float: left;
+}
+#address p {
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 50px;
+  
+}
+
+#aside {
+    position: relative;
+    width: 30%;
+    float: right;
+}
+#aside:after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: -80px;
+    width: 1px;
+    height: 160px;
+    background: #777;
+}
+#aside h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 20px;
+}
+#aside p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 10px;
+
+}
+#aside span {
+    /*border: 2px solid blue;*/
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 11px;
+}
+#aside a {
+    display: inline-block;
+    min-width: 60px;
+    margin-top: 5px;
+    padding: 0px 8px;
+    height: 20px;
+    line-height: 18px;
+    font-size: 11px;
+    color: #000;
+    border: 1px solid #333;
+    background-color: #fff;
+    text-align: center;
+}
